@@ -1,4 +1,11 @@
-S: str =  "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-L: list[int] = list(map(lambda x: len(x), S.replace(',','').replace('.','').split()))
+S1: str = "パトカー"
+S2: str = "タクシー"
 
-print(L)
+S3: str = ""
+for i in range(max(len(S1),len(S2))):
+    if i < len(S1):
+        S3 += S1[i]
+    if i < len(S2):
+        S3 += S2[i]
+        
+print(S3)
