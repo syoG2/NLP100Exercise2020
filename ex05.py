@@ -3,10 +3,10 @@ def wordNgram(n: int, s: str) -> list:
     return [words[i:i+n] for i in range(len(words) - n + 1)]
 
 def charNgram(n: int, s: str) -> list:
-    s = s.replace(' ', '')
+    s:str = s.replace(' ', '')
     return [s[i:i+n] for i in range(len(s) - n + 1)]
 
-s = "I am an NLPer"
+s:str = "I am an NLPer"
 
 print(wordNgram(2, s))
 print(charNgram(2, s))
